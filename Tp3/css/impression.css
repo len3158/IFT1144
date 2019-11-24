@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/******************************* Règles pour la feuille d'impression *******************************/
+/****** Suppression du menu de navigation *********/
+
+nav{ 
+                display: none;
+}
+
+/****** Règles pour le corps de la page *********/
+
+body{ 
+        background-color: #ffffff;
+        font-family: serif;
+        font-size: 11pt;
+        color: black;
+} 
+
+/****** Suppression des marges et des bordures *********/
+
+#page{
+        margin: 0; 
+        border: none;
+}
+
+footer{
+    display:none;
+}
+
+

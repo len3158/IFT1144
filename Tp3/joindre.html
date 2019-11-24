@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/> 
+        <title>Pour nous rejoindre</title>
+        <link href="css/style.css" rel="stylesheet" media="screen" /> 
+        <link href="css/impression.css" rel="stylesheet" media="print" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+        
+    </head>
+    <body>
+            <nav> 
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="http://www-desi.iro.umontreal.ca/~siemenil/Tp3/index.html" class="external">Mon site web sur www-desi</a></li>
+                    <li><a href="joindre.html">Nous Joindre</a></li>
+                    <li><a href="photos.html">Page des Photos</a></li>
+                    <li><a href="tableaux.html">Prochain Grand Prix</a></li>
+                </ul>  
+            </nav>
+        <section>
+            <address>
+                <ul>
+                        <li><a href="http://www-desi.iro.umontreal.ca/~siemenil/Tp3/index.html" class="external">Mon site web sur www-desi</a></li>
+                        <li> Nous contacter: <a href="http://www.desi.umontreal.ca/" class="external">Site web de la desi</a></li>
+                        <li>Nous contacter par telephone: <p>514-123-4567</p></li>
+                        <li>Nous contacter par mail: <a href="mailto:lenny-joseph@umontreal.ca">Ecrire un mail</a></li>
+                    </ul>
+            </address>
+        </section>
+       <p>Si vous souhaitez faire partie de notre communuté, merci de remplir le formulaire ci-desous:</p>
+       <form method="post" action="http://www-desi.iro.umontreal.ca/~coelho/ift1144/Forms/echoForm.php">
+          <fieldset>
+           <fieldset>
+               
+            <legend> Données personelles</legend>
+            <p>  
+               <div>
+                <label for="nom">Nom</label>
+                <input type="text" name="Nom" id="nom" required/>
+               </div>
+                
+                <div>
+                    <label for="prénom">Prénom</label>
+                    <input type="text" name="Prénom" id="prénom" required/>
+                </div>
+                
+              <div>
+                  <label for="age"><abbr title="Nous vous demandons votre âge seulement pour des fins statistiques.">Âge</abbr></label>
+                <input type="number" name="Âge" id="age"/>
+              </div>
+                
+               <div>
+                <label for="phone">Téléphone</label>
+                <input type="tel" name="Phone" id="phone" placeholder="(999) 999-9999" pattern="\([2-9][2-9]{2}\) [2-9]{3}-[2-9]{4}"/>
+               </div>
+                
+               <div>   
+                <label for="mail">Votre courriel</label>
+                   <input type="email" name="Courriel" id="courriel" placeholder="nom@exemple.com" required/>
+               </div>
+               
+               <div>
+                <label for="mail">Confirmation du courriel</label>
+                <input type="email" name="Courriel" id="confcourriel" required/>
+               </div>
+              
+              <div>
+                <label for="code postal">Code postal</label>
+                <input type="text" name="CP" id="cp" placeholder="X9X9X9" pattern="[A-Z][0-9][A-Z][0-9][A-Z][0-9]"/>
+              </div>  
+                
+              <div>  
+                <label for="ville">Ville</label>
+                <input type="text" name="Ville" id="ville"/>
+              </div>
+               
+                <div> 
+                    <label for="province">Province</label> 
+                    <select name="Province" id="province"> 
+                        <option> ---Veuillez sélectionner une province--- </option>
+                        <option> Alberta </option>
+                        <option> Colombie-Britanique </option>
+                        <option> Île-du-Prince-Édouard </option>
+                        <option> Manitoba </option> 
+                        <option> Nouveau-Brunswick </option>
+                        <option> Nouvelle-Écosse </option> 
+                        <option> Ontario </option>
+                        <option> Québec </option> 
+                        <option> Saskatchewan </option> 
+                        <option> Terre-Neuve-et-Labrador </option> 
+                    </select> 
+                </div> 
+            </p>
+               </fieldset>
+                   
+           <fieldset>   
+            <legend> Autres Informations </legend>
+            <p>
+                <p> Souhaitez-vous recevoir notre newsletter hebdomadaire par courriel? </p>
+                <input type="radio" name="Newsletter" value="Oui" checked/>
+                <label for="Y"> Oui </label>
+                <input type="radio" name="Newsletter" value="Non" id="N"/>
+                <label for="N"> Non </label>
+                
+                <div> Par quel moyens obtenez-vous le plus d'informations sur le monde de la F1?</div>
+                <input type="checkbox" name="F1infos[ ]" value="Internet" checked/>
+                <label for="internet"> Internet </label>
+                <input type="checkbox" name="F1infos[ ]" value="Télévision" id="tele" />
+                <label for="tele"> Télévision </label>
+                <input type="checkbox" name="F1infos[ ]" value="Presse" id="revue" />
+                <label for="revue"> Revues </label>
+                <input type="hidden" name="cache" id="cache" value="SIEL27049508"/> 
+             </fieldset> 
+              
+                    <div>Des questions? Des suggestions? Ecrivez-nous!
+                        <label for="commentaire"></label>
+                        <textarea name="Commentaire" id="msg" rows="3" cols="20" placeholder="Entrez votre texte ici" ></textarea>
+                    </div>
+              
+              <p id="submit">
+                  <input class="envoyer" type="submit" value="Envoyer"/>
+                  <input class="annuler" type="reset" value="Annuler"/>
+              </p>
+          </fieldset>   
+
+                
+            </p> 
+
+       </form> 
+           
+     <footer> 
+          <div> 
+            <p> Copyright &copy; Lenny Siemeni</p>
+            <a href="http://validator.w3.org/check?uri=referer" class="external">
+                <img src="http://www.w3.org/html/logo/badge/html5-badge-h-semantics.png" class="external" width="133"
+                    height="64" alt="HTML5 Powered with Semantics"
+                    title="HTML5 Powered with Semantics"/>
+            </a> 
+          </div>
+     </footer>    
+        
+        <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+        <script src="../js/scripts/script.js"></script>
+    </body>
+</html>
